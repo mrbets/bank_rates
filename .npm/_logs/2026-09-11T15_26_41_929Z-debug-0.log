@@ -1,0 +1,802 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@10.2.5
+2 info using node@v20.15.1
+3 timing npm:load:whichnode Completed in 2ms
+4 timing config:load:defaults Completed in 3ms
+5 timing config:load:file:/usr/lib/node_modules/npm/npmrc Completed in 18ms
+6 timing config:load:builtin Completed in 19ms
+7 timing config:load:cli Completed in 6ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/usr/src/app/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 9ms
+11 timing config:load:file:/root/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 1ms
+13 timing config:load:file:/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 1ms
+15 timing config:load:setEnvs Completed in 1ms
+16 timing config:load Completed in 42ms
+17 timing npm:load:configload Completed in 43ms
+18 timing config:load:flatten Completed in 5ms
+19 timing npm:load:mkdirpcache Completed in 0ms
+20 timing npm:load:mkdirplogs Completed in 0ms
+21 verbose title npm install puppeteer-extra puppeteer-extra-plugin-stealth
+22 verbose argv "install" "puppeteer-extra" "puppeteer-extra-plugin-stealth" "--no-save" "--loglevel" "silent" "--cache" "/screenshots/.npm"
+23 timing npm:load:setTitle Completed in 2ms
+24 timing npm:load:display Completed in 2ms
+25 verbose logfile logs-max:10 dir:/screenshots/.npm/_logs/2026-09-11T15_26_41_929Z-
+26 verbose logfile /screenshots/.npm/_logs/2026-09-11T15_26_41_929Z-debug-0.log
+27 timing npm:load:logFile Completed in 18ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 100ms
+31 timing arborist:ctor Completed in 2ms
+32 silly logfile done cleaning log files
+33 timing idealTree:init Completed in 182ms
+34 timing idealTree:userRequests Completed in 7ms
+35 silly idealTree buildDeps
+36 silly fetch manifest puppeteer-extra@*
+37 timing arborist:ctor Completed in 1ms
+38 http fetch GET 200 https://registry.npmjs.org/puppeteer-extra 290ms (cache miss)
+39 silly fetch manifest @types/puppeteer@*
+40 http fetch GET 200 https://registry.npmjs.org/@types%2fpuppeteer 69ms (cache miss)
+41 silly fetch manifest puppeteer@^22.9.0
+42 http fetch GET 200 https://registry.npmjs.org/puppeteer 138ms (cache miss)
+43 silly fetch manifest puppeteer-core@*
+44 http fetch GET 200 https://registry.npmjs.org/puppeteer-core 66ms (cache miss)
+45 silly fetch manifest puppeteer-extra-plugin-stealth@*
+46 http fetch GET 200 https://registry.npmjs.org/puppeteer-extra-plugin-stealth 57ms (cache miss)
+47 silly fetch manifest playwright-extra@*
+48 http fetch GET 200 https://registry.npmjs.org/playwright-extra 45ms (cache miss)
+49 silly fetch manifest playwright@*
+50 http fetch GET 200 https://registry.npmjs.org/playwright 345ms (cache miss)
+51 silly fetch manifest playwright-core@*
+52 http fetch GET 200 https://registry.npmjs.org/playwright-core 348ms (cache miss)
+53 silly placeDep ROOT puppeteer-extra@3.3.6 OK for: zenika-alpinechrome-withpuppeteer@1.0.0 want: *
+54 silly fetch manifest @types/debug@^4.1.0
+55 silly fetch manifest deepmerge@^4.2.2
+56 silly placeDep ROOT puppeteer-extra-plugin-stealth@2.11.2 OK for: zenika-alpinechrome-withpuppeteer@1.0.0 want: *
+57 silly fetch manifest puppeteer-extra-plugin@^3.2.3
+58 silly fetch manifest puppeteer-extra-plugin-user-preferences@^2.4.1
+59 http fetch GET 200 https://registry.npmjs.org/@types%2fdebug 97ms (cache miss)
+60 http fetch GET 200 https://registry.npmjs.org/puppeteer-extra-plugin 146ms (cache miss)
+61 http fetch GET 200 https://registry.npmjs.org/deepmerge 154ms (cache miss)
+62 http fetch GET 200 https://registry.npmjs.org/puppeteer-extra-plugin-user-preferences 151ms (cache miss)
+63 timing idealTree:#root Completed in 1821ms
+64 silly placeDep ROOT @types/debug@4.1.13 OK for: puppeteer-extra@3.3.6 want: ^4.1.0
+65 silly fetch manifest @types/ms@*
+66 silly placeDep ROOT deepmerge@4.3.1 OK for: puppeteer-extra@3.3.6 want: ^4.2.2
+67 http fetch GET 200 https://registry.npmjs.org/@types%2fms 62ms (cache miss)
+68 timing idealTree:node_modules/puppeteer-extra Completed in 71ms
+69 silly placeDep ROOT @types/ms@2.1.0 OK for: @types/debug@4.1.13 want: *
+70 timing idealTree:node_modules/@types/debug Completed in 4ms
+71 timing idealTree:node_modules/@types/ms Completed in 0ms
+72 timing idealTree:node_modules/deepmerge Completed in 0ms
+73 silly fetch manifest puppeteer@*
+74 silly placeDep ROOT puppeteer-extra-plugin@3.2.3 OK for: puppeteer-extra-plugin-stealth@2.11.2 want: ^3.2.3
+75 silly fetch manifest merge-deep@^3.0.1
+76 silly placeDep ROOT puppeteer-extra-plugin-user-preferences@2.4.1 OK for: puppeteer-extra-plugin-stealth@2.11.2 want: ^2.4.1
+77 silly fetch manifest puppeteer-extra-plugin-user-data-dir@^2.4.1
+78 http fetch GET 200 https://registry.npmjs.org/merge-deep 77ms (cache miss)
+79 http fetch GET 200 https://registry.npmjs.org/puppeteer-extra-plugin-user-data-dir 75ms (cache miss)
+80 timing idealTree:node_modules/puppeteer-extra-plugin-stealth Completed in 102ms
+81 silly placeDep ROOT merge-deep@3.0.3 OK for: puppeteer-extra-plugin@3.2.3 want: ^3.0.1
+82 silly fetch manifest arr-union@^3.1.0
+83 silly fetch manifest clone-deep@^0.2.4
+84 silly fetch manifest kind-of@^3.0.2
+85 http fetch GET 200 https://registry.npmjs.org/clone-deep 46ms (cache miss)
+86 http fetch GET 200 https://registry.npmjs.org/kind-of 48ms (cache miss)
+87 http fetch GET 200 https://registry.npmjs.org/arr-union 62ms (cache miss)
+88 timing idealTree:node_modules/puppeteer-extra-plugin Completed in 69ms
+89 silly placeDep ROOT arr-union@3.1.0 OK for: merge-deep@3.0.3 want: ^3.1.0
+90 silly placeDep ROOT clone-deep@0.2.4 OK for: merge-deep@3.0.3 want: ^0.2.4
+91 silly fetch manifest for-own@^0.1.3
+92 silly fetch manifest is-plain-object@^2.0.1
+93 silly fetch manifest lazy-cache@^1.0.3
+94 silly fetch manifest shallow-clone@^0.1.2
+95 silly placeDep ROOT kind-of@3.2.2 OK for: merge-deep@3.0.3 want: ^3.0.2
+96 silly fetch manifest is-buffer@^1.1.5
+97 http fetch GET 200 https://registry.npmjs.org/is-plain-object 51ms (cache miss)
+98 http fetch GET 200 https://registry.npmjs.org/for-own 53ms (cache miss)
+99 http fetch GET 200 https://registry.npmjs.org/lazy-cache 63ms (cache miss)
+100 http fetch GET 200 https://registry.npmjs.org/shallow-clone 69ms (cache miss)
+101 http fetch GET 200 https://registry.npmjs.org/is-buffer 119ms (cache miss)
+102 timing idealTree:node_modules/merge-deep Completed in 138ms
+103 timing idealTree:node_modules/arr-union Completed in 0ms
+104 silly placeDep ROOT for-own@0.1.5 OK for: clone-deep@0.2.4 want: ^0.1.3
+105 silly fetch manifest for-in@^1.0.1
+106 silly placeDep ROOT is-plain-object@2.0.4 OK for: clone-deep@0.2.4 want: ^2.0.1
+107 silly fetch manifest isobject@^3.0.1
+108 silly placeDep ROOT lazy-cache@1.0.4 OK for: clone-deep@0.2.4 want: ^1.0.3
+109 silly placeDep ROOT shallow-clone@0.1.2 OK for: clone-deep@0.2.4 want: ^0.1.2
+110 silly fetch manifest is-extendable@^0.1.1
+111 silly fetch manifest kind-of@^2.0.1
+112 silly fetch manifest lazy-cache@^0.2.3
+113 silly fetch manifest mixin-object@^2.0.1
+114 http fetch GET 200 https://registry.npmjs.org/for-in 65ms (cache miss)
+115 http fetch GET 200 https://registry.npmjs.org/is-extendable 59ms (cache miss)
+116 http fetch GET 200 https://registry.npmjs.org/isobject 64ms (cache miss)
+117 http fetch GET 200 https://registry.npmjs.org/mixin-object 75ms (cache miss)
+118 timing idealTree:node_modules/clone-deep Completed in 97ms
+119 silly placeDep ROOT for-in@1.0.2 OK for: for-own@0.1.5 want: ^1.0.1
+120 timing idealTree:node_modules/for-own Completed in 2ms
+121 timing idealTree:node_modules/for-in Completed in 0ms
+122 silly placeDep ROOT isobject@3.0.1 OK for: is-plain-object@2.0.4 want: ^3.0.1
+123 timing idealTree:node_modules/is-plain-object Completed in 2ms
+124 timing idealTree:node_modules/isobject Completed in 0ms
+125 silly placeDep ROOT is-buffer@1.1.6 OK for: kind-of@3.2.2 want: ^1.1.5
+126 timing idealTree:node_modules/kind-of Completed in 3ms
+127 timing idealTree:node_modules/is-buffer Completed in 0ms
+128 timing idealTree:node_modules/lazy-cache Completed in 0ms
+129 silly placeDep ROOT puppeteer-extra-plugin-user-data-dir@2.4.1 OK for: puppeteer-extra-plugin-user-preferences@2.4.1 want: ^2.4.1
+130 silly fetch manifest fs-extra@^10.0.0
+131 silly fetch manifest rimraf@^3.0.2
+132 http fetch GET 200 https://registry.npmjs.org/rimraf 50ms (cache miss)
+133 http fetch GET 200 https://registry.npmjs.org/fs-extra 69ms (cache miss)
+134 timing idealTree:node_modules/puppeteer-extra-plugin-user-preferences Completed in 95ms
+135 silly placeDep node_modules/puppeteer-extra-plugin-user-data-dir fs-extra@10.1.0 OK for: puppeteer-extra-plugin-user-data-dir@2.4.1 want: ^10.0.0
+136 silly placeDep ROOT rimraf@3.0.2 OK for: puppeteer-extra-plugin-user-data-dir@2.4.1 want: ^3.0.2
+137 silly fetch manifest glob@^7.1.3
+138 http fetch GET 200 https://registry.npmjs.org/glob 55ms (cache miss)
+139 timing idealTree:node_modules/puppeteer-extra-plugin-user-data-dir Completed in 70ms
+140 silly placeDep ROOT glob@7.2.3 OK for: rimraf@3.0.2 want: ^7.1.3
+141 silly fetch manifest inflight@^1.0.4
+142 silly fetch manifest inherits@2
+143 silly fetch manifest minimatch@^3.1.1
+144 silly fetch manifest fs.realpath@^1.0.0
+145 silly fetch manifest path-is-absolute@^1.0.0
+146 http fetch GET 200 https://registry.npmjs.org/inflight 128ms (cache miss)
+147 http fetch GET 200 https://registry.npmjs.org/path-is-absolute 127ms (cache miss)
+148 http fetch GET 200 https://registry.npmjs.org/fs.realpath 131ms (cache miss)
+149 http fetch GET 200 https://registry.npmjs.org/minimatch 136ms (cache miss)
+150 http fetch GET 200 https://registry.npmjs.org/inherits 142ms (cache miss)
+151 timing idealTree:node_modules/rimraf Completed in 151ms
+152 silly placeDep ROOT fs.realpath@1.0.0 OK for: glob@7.2.3 want: ^1.0.0
+153 silly placeDep ROOT inflight@1.0.6 OK for: glob@7.2.3 want: ^1.0.4
+154 silly placeDep ROOT inherits@2.0.4 OK for: glob@7.2.3 want: 2
+155 silly placeDep ROOT minimatch@3.1.5 OK for: glob@7.2.3 want: ^3.1.1
+156 silly fetch manifest brace-expansion@^1.1.7
+157 silly placeDep ROOT path-is-absolute@1.0.1 OK for: glob@7.2.3 want: ^1.0.0
+158 http fetch GET 200 https://registry.npmjs.org/brace-expansion 47ms (cache miss)
+159 timing idealTree:node_modules/glob Completed in 66ms
+160 timing idealTree:node_modules/fs.realpath Completed in 0ms
+161 timing idealTree:node_modules/inflight Completed in 0ms
+162 timing idealTree:node_modules/inherits Completed in 0ms
+163 silly placeDep ROOT brace-expansion@1.1.18 OK for: minimatch@3.1.5 want: ^1.1.7
+164 silly fetch manifest concat-map@0.0.1
+165 silly fetch manifest balanced-match@^1.0.0
+166 http fetch GET 200 https://registry.npmjs.org/concat-map 42ms (cache miss)
+167 http fetch GET 200 https://registry.npmjs.org/balanced-match 42ms (cache miss)
+168 timing idealTree:node_modules/minimatch Completed in 48ms
+169 silly placeDep ROOT balanced-match@1.0.2 OK for: brace-expansion@1.1.18 want: ^1.0.0
+170 silly placeDep ROOT concat-map@0.0.1 OK for: brace-expansion@1.1.18 want: 0.0.1
+171 timing idealTree:node_modules/brace-expansion Completed in 3ms
+172 timing idealTree:node_modules/balanced-match Completed in 0ms
+173 timing idealTree:node_modules/concat-map Completed in 0ms
+174 timing idealTree:node_modules/path-is-absolute Completed in 0ms
+175 silly placeDep ROOT is-extendable@0.1.1 OK for: shallow-clone@0.1.2 want: ^0.1.1
+176 silly placeDep node_modules/shallow-clone kind-of@2.0.1 OK for: shallow-clone@0.1.2 want: ^2.0.1
+177 silly placeDep node_modules/shallow-clone lazy-cache@0.2.7 OK for: shallow-clone@0.1.2 want: ^0.2.3
+178 silly placeDep ROOT mixin-object@2.0.1 OK for: shallow-clone@0.1.2 want: ^2.0.1
+179 silly fetch manifest for-in@^0.1.3
+180 timing idealTree:node_modules/shallow-clone Completed in 11ms
+181 timing idealTree:node_modules/is-extendable Completed in 0ms
+182 silly placeDep node_modules/mixin-object for-in@0.1.8 OK for: mixin-object@2.0.1 want: ^0.1.3
+183 timing idealTree:node_modules/mixin-object Completed in 3ms
+184 timing idealTree:node_modules/mixin-object/node_modules/for-in Completed in 0ms
+185 timing idealTree:node_modules/puppeteer-extra-plugin-user-data-dir/node_modules/fs-extra Completed in 0ms
+186 timing idealTree:node_modules/shallow-clone/node_modules/kind-of Completed in 0ms
+187 timing idealTree:node_modules/shallow-clone/node_modules/lazy-cache Completed in 0ms
+188 timing idealTree:buildDeps Completed in 2765ms
+189 timing idealTree:fixDepFlags Completed in 3ms
+190 timing idealTree Completed in 2964ms
+191 timing reify:loadTrees Completed in 2966ms
+192 timing reify:diffTrees Completed in 17ms
+193 silly reify moves {}
+194 timing reify:retireShallow Completed in 2ms
+195 timing reify:createSparse Completed in 13ms
+196 timing reify:loadBundles Completed in 0ms
+197 silly audit bulk request {
+197 silly audit   '@babel/code-frame': [ '7.24.2' ],
+197 silly audit   '@babel/helper-validator-identifier': [ '7.24.5' ],
+197 silly audit   '@babel/highlight': [ '7.24.5' ],
+197 silly audit   '@puppeteer/browsers': [ '2.2.3' ],
+197 silly audit   '@tootallnate/quickjs-emscripten': [ '0.23.0' ],
+197 silly audit   '@types/node': [ '20.12.12' ],
+197 silly audit   '@types/yauzl': [ '2.10.3' ],
+197 silly audit   'agent-base': [ '7.1.1' ],
+197 silly audit   'ansi-regex': [ '5.0.1' ],
+197 silly audit   'ansi-styles': [ '3.2.1', '4.3.0' ],
+197 silly audit   argparse: [ '2.0.1' ],
+197 silly audit   'ast-types': [ '0.13.4' ],
+197 silly audit   b4a: [ '1.6.6' ],
+197 silly audit   'bare-events': [ '2.2.2' ],
+197 silly audit   'bare-fs': [ '2.3.0' ],
+197 silly audit   'bare-os': [ '2.3.0' ],
+197 silly audit   'bare-path': [ '2.1.3' ],
+197 silly audit   'bare-stream': [ '1.0.0' ],
+197 silly audit   'base64-js': [ '1.5.1' ],
+197 silly audit   'basic-ftp': [ '5.0.5' ],
+197 silly audit   buffer: [ '5.7.1' ],
+197 silly audit   'buffer-crc32': [ '0.2.13' ],
+197 silly audit   callsites: [ '3.1.0' ],
+197 silly audit   chalk: [ '2.4.2' ],
+197 silly audit   'chromium-bidi': [ '0.5.19' ],
+197 silly audit   cliui: [ '8.0.1' ],
+197 silly audit   'color-convert': [ '1.9.3', '2.0.1' ],
+197 silly audit   'color-name': [ '1.1.3', '1.1.4' ],
+197 silly audit   cosmiconfig: [ '9.0.0' ],
+197 silly audit   'data-uri-to-buffer': [ '6.0.2' ],
+197 silly audit   debug: [ '4.3.4' ],
+197 silly audit   degenerator: [ '5.0.1' ],
+197 silly audit   'devtools-protocol': [ '0.0.1286932' ],
+197 silly audit   'emoji-regex': [ '8.0.0' ],
+197 silly audit   'end-of-stream': [ '1.4.4' ],
+197 silly audit   'env-paths': [ '2.2.1' ],
+197 silly audit   'error-ex': [ '1.3.2' ],
+197 silly audit   escalade: [ '3.1.2' ],
+197 silly audit   'escape-string-regexp': [ '1.0.5' ],
+197 silly audit   escodegen: [ '2.1.0' ],
+197 silly audit   esprima: [ '4.0.1' ],
+197 silly audit   estraverse: [ '5.3.0' ],
+197 silly audit   esutils: [ '2.0.3' ],
+197 silly audit   'extract-zip': [ '2.0.1' ],
+197 silly audit   'fast-fifo': [ '1.3.2' ],
+197 silly audit   'fd-slicer': [ '1.1.0' ],
+197 silly audit   'fs-extra': [ '11.2.0', '10.1.0' ],
+197 silly audit   'get-caller-file': [ '2.0.5' ],
+197 silly audit   'get-stream': [ '5.2.0' ],
+197 silly audit   'get-uri': [ '6.0.3' ],
+197 silly audit   'graceful-fs': [ '4.2.11' ],
+197 silly audit   'has-flag': [ '3.0.0' ],
+197 silly audit   'http-proxy-agent': [ '7.0.2' ],
+197 silly audit   'https-proxy-agent': [ '7.0.4' ],
+197 silly audit   ieee754: [ '1.2.1' ],
+197 silly audit   'import-fresh': [ '3.3.0' ],
+197 silly audit   'ip-address': [ '9.0.5' ],
+197 silly audit   'is-arrayish': [ '0.2.1' ],
+197 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+197 silly audit   'js-tokens': [ '4.0.0' ],
+197 silly audit   'js-yaml': [ '4.1.0' ],
+197 silly audit   jsbn: [ '1.1.0' ],
+197 silly audit   'json-parse-even-better-errors': [ '2.3.1' ],
+197 silly audit   jsonfile: [ '6.1.0' ],
+197 silly audit   'lines-and-columns': [ '1.2.4' ],
+197 silly audit   'lru-cache': [ '7.18.3', '6.0.0' ],
+197 silly audit   mitt: [ '3.0.1' ],
+197 silly audit   ms: [ '2.1.2' ],
+197 silly audit   netmask: [ '2.0.2' ],
+197 silly audit   once: [ '1.4.0' ],
+197 silly audit   'pac-proxy-agent': [ '7.0.1' ],
+197 silly audit   'pac-resolver': [ '7.0.1' ],
+197 silly audit   'parent-module': [ '1.0.1' ],
+197 silly audit   'parse-json': [ '5.2.0' ],
+197 silly audit   pend: [ '1.2.0' ],
+197 silly audit   picocolors: [ '1.0.1' ],
+197 silly audit   progress: [ '2.0.3' ],
+197 silly audit   'proxy-agent': [ '6.4.0' ],
+197 silly audit   'proxy-from-env': [ '1.1.0' ],
+197 silly audit   pump: [ '3.0.0' ],
+197 silly audit   puppeteer: [ '22.9.0' ],
+197 silly audit   'puppeteer-core': [ '22.9.0' ],
+197 silly audit   'queue-tick': [ '1.0.1' ],
+197 silly audit   'require-directory': [ '2.1.1' ],
+197 silly audit   'resolve-from': [ '4.0.0' ],
+197 silly audit   semver: [ '7.6.0' ],
+197 silly audit   'smart-buffer': [ '4.2.0' ],
+197 silly audit   socks: [ '2.8.3' ],
+197 silly audit   'socks-proxy-agent': [ '8.0.3' ],
+197 silly audit   'source-map': [ '0.6.1' ],
+197 silly audit   'sprintf-js': [ '1.1.3' ],
+197 silly audit   streamx: [ '2.16.1' ],
+197 silly audit   'string-width': [ '4.2.3' ],
+197 silly audit   'strip-ansi': [ '6.0.1' ],
+197 silly audit   'supports-color': [ '5.5.0' ],
+197 silly audit   'tar-fs': [ '3.0.5' ],
+197 silly audit   'tar-stream': [ '3.1.7' ],
+197 silly audit   through: [ '2.3.8' ],
+197 silly audit   tslib: [ '2.6.2' ],
+197 silly audit   'unbzip2-stream': [ '1.4.3' ],
+197 silly audit   'undici-types': [ '5.26.5' ],
+197 silly audit   universalify: [ '2.0.1' ],
+197 silly audit   'urlpattern-polyfill': [ '10.0.0' ],
+197 silly audit   'wrap-ansi': [ '7.0.0' ],
+197 silly audit   wrappy: [ '1.0.2' ],
+197 silly audit   ws: [ '8.17.0' ],
+197 silly audit   y18n: [ '5.0.8' ],
+197 silly audit   yallist: [ '4.0.0' ],
+197 silly audit   yargs: [ '17.7.2' ],
+197 silly audit   'yargs-parser': [ '21.1.1' ],
+197 silly audit   yauzl: [ '2.10.0' ],
+197 silly audit   zod: [ '3.22.4' ],
+197 silly audit   'puppeteer-extra': [ '3.3.6' ],
+197 silly audit   'puppeteer-extra-plugin-stealth': [ '2.11.2' ],
+197 silly audit   '@types/debug': [ '4.1.13' ],
+197 silly audit   deepmerge: [ '4.3.1' ],
+197 silly audit   '@types/ms': [ '2.1.0' ],
+197 silly audit   'puppeteer-extra-plugin': [ '3.2.3' ],
+197 silly audit   'puppeteer-extra-plugin-user-preferences': [ '2.4.1' ],
+197 silly audit   'merge-deep': [ '3.0.3' ],
+197 silly audit   'arr-union': [ '3.1.0' ],
+197 silly audit   'clone-deep': [ '0.2.4' ],
+197 silly audit   'kind-of': [ '3.2.2', '2.0.1' ],
+197 silly audit   'for-own': [ '0.1.5' ],
+197 silly audit   'is-plain-object': [ '2.0.4' ],
+197 silly audit   'lazy-cache': [ '1.0.4', '0.2.7' ],
+197 silly audit   'shallow-clone': [ '0.1.2' ],
+197 silly audit   'for-in': [ '1.0.2', '0.1.8' ],
+197 silly audit   isobject: [ '3.0.1' ],
+197 silly audit   'is-buffer': [ '1.1.6' ],
+197 silly audit   'puppeteer-extra-plugin-user-data-dir': [ '2.4.1' ],
+197 silly audit   rimraf: [ '3.0.2' ],
+197 silly audit   glob: [ '7.2.3' ],
+197 silly audit   'fs.realpath': [ '1.0.0' ],
+197 silly audit   inflight: [ '1.0.6' ],
+197 silly audit   inherits: [ '2.0.4' ],
+197 silly audit   minimatch: [ '3.1.5' ],
+197 silly audit   'path-is-absolute': [ '1.0.1' ],
+197 silly audit   'brace-expansion': [ '1.1.18' ],
+197 silly audit   'balanced-match': [ '1.0.2' ],
+197 silly audit   'concat-map': [ '0.0.1' ],
+197 silly audit   'is-extendable': [ '0.1.1' ],
+197 silly audit   'mixin-object': [ '2.0.1' ]
+197 silly audit }
+198 silly tarball no local data for mixin-object@https://registry.npmjs.org/mixin-object/-/mixin-object-2.0.1.tgz. Extracting by manifest.
+199 silly tarball no local data for is-extendable@https://registry.npmjs.org/is-extendable/-/is-extendable-0.1.1.tgz. Extracting by manifest.
+200 silly tarball no local data for concat-map@https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz. Extracting by manifest.
+201 silly tarball no local data for balanced-match@https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz. Extracting by manifest.
+202 silly tarball no local data for brace-expansion@https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.18.tgz. Extracting by manifest.
+203 silly tarball no local data for path-is-absolute@https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz. Extracting by manifest.
+204 silly tarball no local data for minimatch@https://registry.npmjs.org/minimatch/-/minimatch-3.1.5.tgz. Extracting by manifest.
+205 silly tarball no local data for inherits@https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz. Extracting by manifest.
+206 silly tarball no local data for inflight@https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz. Extracting by manifest.
+207 silly tarball no local data for fs.realpath@https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz. Extracting by manifest.
+208 silly tarball no local data for glob@https://registry.npmjs.org/glob/-/glob-7.2.3.tgz. Extracting by manifest.
+209 silly tarball no local data for rimraf@https://registry.npmjs.org/rimraf/-/rimraf-3.0.2.tgz. Extracting by manifest.
+210 silly tarball no local data for puppeteer-extra-plugin-user-data-dir@https://registry.npmjs.org/puppeteer-extra-plugin-user-data-dir/-/puppeteer-extra-plugin-user-data-dir-2.4.1.tgz. Extracting by manifest.
+211 silly tarball no local data for is-buffer@https://registry.npmjs.org/is-buffer/-/is-buffer-1.1.6.tgz. Extracting by manifest.
+212 silly tarball no local data for isobject@https://registry.npmjs.org/isobject/-/isobject-3.0.1.tgz. Extracting by manifest.
+213 silly tarball no local data for for-in@https://registry.npmjs.org/for-in/-/for-in-1.0.2.tgz. Extracting by manifest.
+214 silly tarball no local data for shallow-clone@https://registry.npmjs.org/shallow-clone/-/shallow-clone-0.1.2.tgz. Extracting by manifest.
+215 silly tarball no local data for is-plain-object@https://registry.npmjs.org/is-plain-object/-/is-plain-object-2.0.4.tgz. Extracting by manifest.
+216 silly tarball no local data for lazy-cache@https://registry.npmjs.org/lazy-cache/-/lazy-cache-1.0.4.tgz. Extracting by manifest.
+217 silly tarball no local data for for-own@https://registry.npmjs.org/for-own/-/for-own-0.1.5.tgz. Extracting by manifest.
+218 silly tarball no local data for kind-of@https://registry.npmjs.org/kind-of/-/kind-of-3.2.2.tgz. Extracting by manifest.
+219 silly tarball no local data for clone-deep@https://registry.npmjs.org/clone-deep/-/clone-deep-0.2.4.tgz. Extracting by manifest.
+220 silly tarball no local data for arr-union@https://registry.npmjs.org/arr-union/-/arr-union-3.1.0.tgz. Extracting by manifest.
+221 silly tarball no local data for merge-deep@https://registry.npmjs.org/merge-deep/-/merge-deep-3.0.3.tgz. Extracting by manifest.
+222 silly tarball no local data for puppeteer-extra-plugin-user-preferences@https://registry.npmjs.org/puppeteer-extra-plugin-user-preferences/-/puppeteer-extra-plugin-user-preferences-2.4.1.tgz. Extracting by manifest.
+223 silly tarball no local data for puppeteer-extra-plugin@https://registry.npmjs.org/puppeteer-extra-plugin/-/puppeteer-extra-plugin-3.2.3.tgz. Extracting by manifest.
+224 silly tarball no local data for @types/ms@https://registry.npmjs.org/@types/ms/-/ms-2.1.0.tgz. Extracting by manifest.
+225 silly tarball no local data for deepmerge@https://registry.npmjs.org/deepmerge/-/deepmerge-4.3.1.tgz. Extracting by manifest.
+226 silly tarball no local data for @types/debug@https://registry.npmjs.org/@types/debug/-/debug-4.1.13.tgz. Extracting by manifest.
+227 silly tarball no local data for puppeteer-extra-plugin-stealth@https://registry.npmjs.org/puppeteer-extra-plugin-stealth/-/puppeteer-extra-plugin-stealth-2.11.2.tgz. Extracting by manifest.
+228 silly tarball no local data for puppeteer-extra@https://registry.npmjs.org/puppeteer-extra/-/puppeteer-extra-3.3.6.tgz. Extracting by manifest.
+229 silly tarball no local data for fs-extra@https://registry.npmjs.org/fs-extra/-/fs-extra-10.1.0.tgz. Extracting by manifest.
+230 silly tarball no local data for lazy-cache@https://registry.npmjs.org/lazy-cache/-/lazy-cache-0.2.7.tgz. Extracting by manifest.
+231 silly tarball no local data for for-in@https://registry.npmjs.org/for-in/-/for-in-0.1.8.tgz. Extracting by manifest.
+232 silly tarball no local data for kind-of@https://registry.npmjs.org/kind-of/-/kind-of-2.0.1.tgz. Extracting by manifest.
+233 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 322ms
+234 timing auditReport:getReport Completed in 331ms
+235 silly audit report {
+235 silly audit report   'basic-ftp': [
+235 silly audit report     {
+235 silly audit report       id: 1118825,
+235 silly audit report       url: 'https://github.com/advisories/GHSA-rpmf-866q-6p89',
+235 silly audit report       title: 'basic-ftp allows a malicious FTP server to cause client-side denial of service via unbounded multiline control response buffering',
+235 silly audit report       severity: 'high',
+235 silly audit report       vulnerable_versions: '<=5.3.0',
+235 silly audit report       cwe: [Array],
+235 silly audit report       cvss: [Object]
+235 silly audit report     },
+235 silly audit report     {
+235 silly audit report       id: 1113518,
+235 silly audit report       url: 'https://github.com/advisories/GHSA-5rq4-664w-9x2c',
+235 silly audit report       title: 'Basic FTP has Path Traversal Vulnerability in its downloadToDir() method',
+235 silly audit report       severity: 'critical',
+235 silly audit report       vulnerable_versions: '<5.2.0',
+235 silly audit report       cwe: [Array],
+235 silly audit report       cvss: [Object]
+235 silly audit report     },
+235 silly audit report     {
+235 silly audit report       id: 1116454,
+235 silly audit report       url: 'https://github.com/advisories/GHSA-6v7q-wjvx-w8wg',
+235 silly audit report       title: 'basic-ftp: Incomplete CRLF Injection Protection Allows Arbitrary FTP Command Execution via Credentials and MKD Commands',
+235 silly audit report       severity: 'high',
+235 silly audit report       vulnerable_versions: '<=5.2.1',
+235 silly audit report       cwe: [Array],
+235 silly audit report       cvss: [Object]
+235 silly audit report     },
+235 silly audit report     {
+235 silly audit report       id: 1117083,
+235 silly audit report       url: 'https://github.com/advisories/GHSA-rp42-5vxx-qpwr',
+235 silly audit report       title: 'basic-ftp vulnerable to denial of service via unbounded memory consumption in Client.list()',
+235 silly audit report       severity: 'high',
+235 silly audit report       vulnerable_versions: '<=5.2.2',
+235 silly audit report       cwe: [Array],
+235 silly audit report       cvss: [Object]
+235 silly audit report     }
+235 silly audit report   ],
+235 silly audit report   'extract-zip': [
+235 silly audit report     {
+235 silly audit report       id: 1139346,
+235 silly audit report       url: 'https://github.com/advisories/GHSA-jmr9-qjv8-65gv',
+235 silly audit report       title: 'extract-zip unvalidated symlink path traversal',
+235 silly audit report       severity: 'high',
+235 silly audit report       vulnerable_versions: '<=2.0.1',
+235 silly audit report       cwe: [Array],
+235 silly audit report       cvss: [Object]
+235 silly audit report     },
+235 silly audit report     {
+235 silly audit report       id: 1193685,
+235 silly audit report       url: 'https://github.com/advisories/GHSA-7pqw-9j4j-h8q3',
+235 silly audit report       title: 'extract-zip allows arbitrary file writes through symlink archive entries',
+235 silly audit report       severity: 'high',
+235 silly audit report       vulnerable_versions: '<=2.0.1',
+235 silly audit report       cwe: [Array],
+235 silly audit report       cvss: [Object]
+235 silly audit report     }
+235 silly audit report   ],
+235 silly audit report   'ip-address': [
+235 silly audit report     {
+235 silly audit report       id: 1118827,
+235 silly audit report       url: 'https://github.com/advisories/GHSA-v2v4-37r5-5v8g',
+235 silly audit report       title: 'ip-address has XSS in Address6 HTML-emitting methods',
+235 silly audit report       severity: 'moderate',
+235 silly audit report       vulnerable_versions: '<=10.1.0',
+235 silly audit report       cwe: [Array],
+235 silly audit report       cvss: [Object]
+235 silly audit report     },
+235 silly audit report     {
+235 silly audit report       id: 1130722,
+235 silly audit report       url: 'https://github.com/advisories/GHSA-mwp4-54f8-5fhr',
+235 silly audit report       title: 'ip-address: Address4 decodes leading-zero octets as decimal while resolvers decode them as octal, allowing SSRF and trust-boundary bypass',
+235 silly audit report       severity: 'high',
+235 silly audit report       vulnerable_versions: '<=10.3.0',
+235 silly audit report       cwe: [Array],
+235 silly audit report       cvss: [Object]
+235 silly audit report     }
+235 silly audit report   ],
+235 silly audit report   'js-yaml': [
+235 silly audit report     {
+235 silly audit report       id: 1112715,
+235 silly audit report       url: 'https://github.com/advisories/GHSA-mh29-5h37-fv8m',
+235 silly audit report       title: 'js-yaml has prototype pollution in merge (<<)',
+235 silly audit report       severity: 'moderate',
+235 silly audit report       vulnerable_versions: '>=4.0.0 <4.1.1',
+235 silly audit report       cwe: [Array],
+235 silly audit report       cvss: [Object]
+235 silly audit report     },
+235 silly audit report     {
+235 silly audit report       id: 1121860,
+235 silly audit report       url: 'https://github.com/advisories/GHSA-h67p-54hq-rp68',
+235 silly audit report       title: 'JS-YAML: Quadratic-complexity DoS in merge key handling via repeated aliases',
+235 silly audit report       severity: 'moderate',
+235 silly audit report       vulnerable_versions: '>=4.0.0 <=4.1.1',
+235 silly audit report       cwe: [Array],
+235 silly audit report       cvss: [Object]
+235 silly audit report     },
+235 silly audit report     {
+235 silly audit report       id: 1123911,
+235 silly audit report       url: 'https://github.com/advisories/GHSA-52cp-r559-cp3m',
+235 silly audit report       title: 'js-yaml: YAML merge-key chains can force quadratic CPU consumption',
+235 silly audit report       severity: 'high',
+235 silly audit report       vulnerable_versions: '>=4.0.0 <4.3.0',
+235 silly audit report       cwe: [Array],
+235 silly audit report       cvss: [Object]
+235 silly audit report     },
+235 silly audit report     {
+235 silly audit report       id: 1138115,
+235 silly audit report       url: 'https://github.com/advisories/GHSA-5p4m-2wfm-xmqj',
+235 silly audit report       title: 'JS-YAML: Quadratic CPU consumption in !!omap resolution (3.x and 4.x) — CVE-2026-59870 fix not backported',
+235 silly audit report       severity: 'high',
+235 silly audit report       vulnerable_versions: '>=4.0.0 <4.3.1',
+235 silly audit report       cwe: [Array],
+235 silly audit report       cvss: [Object]
+235 silly audit report     },
+235 silly audit report     {
+235 silly audit report       id: 1193727,
+235 silly audit report       url: 'https://github.com/advisories/GHSA-2883-xcg3-v3hh',
+235 silly audit report       title: 'js-yaml: maxTotalMergeKeys does not limit CPU use for empty merge sources',
+235 silly audit report       severity: 'high',
+235 silly audit report       vulnerable_versions: '>=4.0.0 <4.3.2',
+235 silly audit report       cwe: [Array],
+235 silly audit report       cvss: [Object]
+235 silly audit report     }
+235 silly audit report   ],
+235 silly audit report   'tar-fs': [
+235 silly audit report     {
+235 silly audit report       id: 1109534,
+235 silly audit report       url: 'https://github.com/advisories/GHSA-vj76-c3g6-qr5v',
+235 silly audit report       title: 'tar-fs has a symlink validation bypass if destination directory is predictable with a specific tarball',
+235 silly audit report       severity: 'high',
+235 silly audit report       vulnerable_versions: '>=3.0.0 <3.1.1',
+235 silly audit report       cwe: [Array],
+235 silly audit report       cvss: [Object]
+235 silly audit report     },
+235 silly audit report     {
+235 silly audit report       id: 1109542,
+235 silly audit report       url: 'https://github.com/advisories/GHSA-8cj5-5rvv-wf4v',
+235 silly audit report       title: 'tar-fs can extract outside the specified dir with a specific tarball',
+235 silly audit report       severity: 'high',
+235 silly audit report       vulnerable_versions: '>=3.0.0 <3.0.9',
+235 silly audit report       cwe: [Array],
+235 silly audit report       cvss: [Object]
+235 silly audit report     },
+235 silly audit report     {
+235 silly audit report       id: 1109551,
+235 silly audit report       url: 'https://github.com/advisories/GHSA-pq67-2wwv-3xjx',
+235 silly audit report       title: 'tar-fs Vulnerable to Link Following and Path Traversal via Extracting a Crafted tar File',
+235 silly audit report       severity: 'high',
+235 silly audit report       vulnerable_versions: '>=3.0.0 <3.0.7',
+235 silly audit report       cwe: [Array],
+235 silly audit report       cvss: [Object]
+235 silly audit report     }
+235 silly audit report   ],
+235 silly audit report   ws: [
+235 silly audit report     {
+235 silly audit report       id: 1118728,
+235 silly audit report       url: 'https://github.com/advisories/GHSA-3h5v-q93c-6h6q',
+235 silly audit report       title: 'ws affected by a DoS when handling a request with many HTTP headers',
+235 silly audit report       severity: 'high',
+235 silly audit report       vulnerable_versions: '>=8.0.0 <8.17.1',
+235 silly audit report       cwe: [Array],
+235 silly audit report       cvss: [Object]
+235 silly audit report     },
+235 silly audit report     {
+235 silly audit report       id: 1119108,
+235 silly audit report       url: 'https://github.com/advisories/GHSA-58qx-3vcg-4xpx',
+235 silly audit report       title: 'ws: Uninitialized memory disclosure',
+235 silly audit report       severity: 'moderate',
+235 silly audit report       vulnerable_versions: '>=8.0.0 <8.20.1',
+235 silly audit report       cwe: [Array],
+235 silly audit report       cvss: [Object]
+235 silly audit report     },
+235 silly audit report     {
+235 silly audit report       id: 1123259,
+235 silly audit report       url: 'https://github.com/advisories/GHSA-96hv-2xvq-fx4p',
+235 silly audit report       title: 'ws: Memory exhaustion DoS from tiny fragments and data chunks',
+235 silly audit report       severity: 'high',
+235 silly audit report       vulnerable_versions: '>=8.0.0 <8.21.0',
+235 silly audit report       cwe: [Array],
+235 silly audit report       cvss: [Object]
+235 silly audit report     }
+235 silly audit report   ]
+235 silly audit report }
+236 timing metavuln:cache:get:security-advisory:basic-ftp:1PRVnmGNL8rYZpgZAvyPH2nvFd6p8UYB63Bl4yML0P5I4/BEia9ZT0oQKzvYVTM8w+OmHxe2obrZLSbgAdJHxg== Completed in 32ms
+237 timing metavuln:cache:get:security-advisory:basic-ftp:vIIozQq7xzP2tB9AvV8wE7lrwibHkDox71ej09+lcyQJ/Q7pT4wyEOGl32rTRMv780zdzBIb9giOVTU4j4acpA== Completed in 30ms
+238 timing metavuln:cache:get:security-advisory:basic-ftp:Xm5K4BbE70IJjDMXQ98Fbd+dQn5JVUkzo9rBjpBNhXf1r9+QHKyPPPe7K80fDVwNYVs6dhe7KPuGl8CIHjFg6w== Completed in 30ms
+239 timing metavuln:cache:get:security-advisory:basic-ftp:dwgcsujhz5E4o162n5FcYkiUltc7EZwPMDvZGSl61ZbkbeSuMouqA8yQAXEvxv4X8oFUZK0HCwnLBiAckkCl8Q== Completed in 29ms
+240 timing metavuln:cache:get:security-advisory:extract-zip:jSWTM56amLotlEyQMMBsw92Q/clAh5dhlOjtFhHsq98TlvN8hzenDvvOxc3tJgHR5Vqi7ZygoBhGke/CFd+aVg== Completed in 29ms
+241 timing metavuln:cache:get:security-advisory:extract-zip:5PFZQI8MKk12bR/YK/ZVnUmDiH8J19S/dbxvcq6MnKcd40s7jQdQeJZjIR3e3QxohW1CAyHmvPolG6tuD2vnrA== Completed in 27ms
+242 timing metavuln:cache:get:security-advisory:ip-address:JagRJ/jzi+hKfT9wwia4ZBLD59vjtPACLl+Z3zhrC+8zTljlC7S7d5t68wAVLZOwEIznyIrsv2WhfUc2gH+cEg== Completed in 28ms
+243 timing metavuln:cache:get:security-advisory:ip-address:iZ6eqftXQ5U7oxxwm1FqwNnsmmgaiEiPNMWwV0yEYoA92hylUZDRGksj2tTX69LoRE19mpn7CYQC1Yylb7gTNg== Completed in 26ms
+244 timing metavuln:cache:get:security-advisory:js-yaml:621IdjBdZEeVoUcjWGl1jXN0jFDGaf7dIQMeaPVKf5MxqYprJztiOC0OHOUPVoayh7Cq/fTC8L5CqEb98qlE7w== Completed in 26ms
+245 timing metavuln:cache:get:security-advisory:js-yaml:hRHUgW0MJiPqjWt2sUfet2EYlqoE1gaxACC2WErx8y0hzruS4JIdQFSyu03fknqwUeEglYl2LNhb3CLbe1gk7A== Completed in 24ms
+246 timing metavuln:cache:get:security-advisory:js-yaml:4JRmIWaw7t9g2nj2coc/knMKSpUTTvf6gd7QGFDejryJnGjc+YeBUVzshR5afcQZnuPyYGRjBRxydkQEqdhtbQ== Completed in 24ms
+247 timing metavuln:cache:get:security-advisory:js-yaml:OUZIQ3PVVGrkuRqB+emtTIY6mY1ZYXKAjty3MEHcLQlklmPh5BstzoMFTWmQmZxuW4bTRahKM6+bAF3EDZo2xw== Completed in 24ms
+248 timing metavuln:cache:get:security-advisory:js-yaml:rPKItsey5NAOkwlZ0jj/srGDfex3lM3kc0Jt/iKDQKxrLExmxBPfiHEGSGFS11EIIZ9oWm9Jw3K50YZA6kxidg== Completed in 23ms
+249 timing metavuln:cache:get:security-advisory:tar-fs:QYnG1CC8+NN+TqmWQx3aHBnBQ9p/MAbw4I0l+gnlj2PZN7hy3FLfaWP6JdJJmUCn32+BftZCVifrkSu2nK39jQ== Completed in 23ms
+250 timing metavuln:cache:get:security-advisory:tar-fs:lfVnxIEXtxFrrw8msCJ2KKW94ZKO5ug5zCelMM/mLzVYoa2FDeP10DtXjm7MPf5RoPC0G7RMGL4Njf3Qm6oAoA== Completed in 23ms
+251 timing metavuln:cache:get:security-advisory:tar-fs:KfSIEBXTCgWMFKC8B6Ksr2lGcBoxYfqZYZdW7gD6YmYHmfY9yzqONXKd7VyQQePL5rvYDxjrjqU0VlRARhMrsg== Completed in 22ms
+252 timing metavuln:cache:get:security-advisory:ws:Gibcit29n/ogkeUBgZ01NX6U+jY3Zp1E0iGdto646j72OVuTsI1GTUWZzCtx3XwMU+kaOMlk+m0bDbRGj4Ruuw== Completed in 22ms
+253 timing metavuln:cache:get:security-advisory:ws:riCaqXeEj3LGJHsuDUezanD1igwJ1gD5B0Z0jDf8slGSkFNcUxH/yz4/VwuWsi+XAx/SPZKMWI5kAltGWYRGUg== Completed in 20ms
+254 timing metavuln:cache:get:security-advisory:ws:FCiq93wPa5YIRoC+osxDM6AqlUQalSrMxM3xxzdzdy9dCvEbzaPVIuWaJi1l/8fX8Bq49JKEKJAZocgF236GuA== Completed in 20ms
+255 http fetch GET 200 https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz 863ms (cache miss)
+256 timing reifyNode:node_modules/balanced-match Completed in 908ms
+257 http fetch GET 200 https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz 878ms (cache miss)
+258 timing reifyNode:node_modules/concat-map Completed in 921ms
+259 http fetch GET 200 https://registry.npmjs.org/mixin-object/-/mixin-object-2.0.1.tgz 883ms (cache miss)
+260 timing reifyNode:node_modules/mixin-object Completed in 923ms
+261 http fetch GET 200 https://registry.npmjs.org/is-extendable/-/is-extendable-0.1.1.tgz 891ms (cache miss)
+262 timing reifyNode:node_modules/is-extendable Completed in 933ms
+263 http fetch GET 200 https://registry.npmjs.org/extract-zip 622ms (cache miss)
+264 timing metavuln:packument:extract-zip Completed in 624ms
+265 timing metavuln:load:security-advisory:extract-zip:1139346 Completed in 3ms
+266 timing metavuln:load:security-advisory:extract-zip:1193685 Completed in 2ms
+267 http fetch GET 200 https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz 908ms (cache miss)
+268 timing reifyNode:node_modules/inherits Completed in 961ms
+269 http fetch GET 200 https://registry.npmjs.org/puppeteer-extra-plugin-user-data-dir/-/puppeteer-extra-plugin-user-data-dir-2.4.1.tgz 888ms (cache miss)
+270 timing reifyNode:node_modules/puppeteer-extra-plugin-user-data-dir Completed in 961ms
+271 http fetch GET 200 https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz 914ms (cache miss)
+272 timing reifyNode:node_modules/path-is-absolute Completed in 963ms
+273 http fetch GET 200 https://registry.npmjs.org/is-plain-object/-/is-plain-object-2.0.4.tgz 878ms (cache miss)
+274 timing reifyNode:node_modules/is-plain-object Completed in 963ms
+275 http fetch GET 200 https://registry.npmjs.org/for-in/-/for-in-1.0.2.tgz 883ms (cache miss)
+276 timing reifyNode:node_modules/for-in Completed in 963ms
+277 http fetch GET 200 https://registry.npmjs.org/rimraf/-/rimraf-3.0.2.tgz 896ms (cache miss)
+278 warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+279 timing reifyNode:node_modules/rimraf Completed in 967ms
+280 http fetch GET 200 https://registry.npmjs.org/for-in/-/for-in-0.1.8.tgz 850ms (cache miss)
+281 timing reifyNode:node_modules/mixin-object/node_modules/for-in Completed in 970ms
+282 http fetch GET 200 https://registry.npmjs.org/arr-union/-/arr-union-3.1.0.tgz 873ms (cache miss)
+283 timing reifyNode:node_modules/arr-union Completed in 969ms
+284 http fetch GET 200 https://registry.npmjs.org/is-buffer/-/is-buffer-1.1.6.tgz 896ms (cache miss)
+285 timing reifyNode:node_modules/is-buffer Completed in 971ms
+286 http fetch GET 200 https://registry.npmjs.org/puppeteer-extra-plugin-user-preferences/-/puppeteer-extra-plugin-user-preferences-2.4.1.tgz 873ms (cache miss)
+287 timing reifyNode:node_modules/puppeteer-extra-plugin-user-preferences Completed in 971ms
+288 http fetch GET 200 https://registry.npmjs.org/for-own/-/for-own-0.1.5.tgz 883ms (cache miss)
+289 timing reifyNode:node_modules/for-own Completed in 972ms
+290 http fetch GET 200 https://registry.npmjs.org/clone-deep/-/clone-deep-0.2.4.tgz 880ms (cache miss)
+291 timing reifyNode:node_modules/clone-deep Completed in 973ms
+292 http fetch GET 200 https://registry.npmjs.org/lazy-cache/-/lazy-cache-1.0.4.tgz 889ms (cache miss)
+293 timing reifyNode:node_modules/lazy-cache Completed in 976ms
+294 http fetch GET 200 https://registry.npmjs.org/shallow-clone/-/shallow-clone-0.1.2.tgz 894ms (cache miss)
+295 timing reifyNode:node_modules/shallow-clone Completed in 976ms
+296 http fetch GET 200 https://registry.npmjs.org/isobject/-/isobject-3.0.1.tgz 899ms (cache miss)
+297 timing reifyNode:node_modules/isobject Completed in 977ms
+298 http fetch GET 200 https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz 921ms (cache miss)
+299 timing reifyNode:node_modules/fs.realpath Completed in 977ms
+300 http fetch GET 200 https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz 923ms (cache miss)
+301 warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+302 timing reifyNode:node_modules/inflight Completed in 979ms
+303 http fetch GET 200 https://registry.npmjs.org/@types/ms/-/ms-2.1.0.tgz 875ms (cache miss)
+304 timing reifyNode:node_modules/@types/ms Completed in 977ms
+305 http fetch GET 200 https://registry.npmjs.org/@types/debug/-/debug-4.1.13.tgz 871ms (cache miss)
+306 timing reifyNode:node_modules/@types/debug Completed in 978ms
+307 http fetch GET 200 https://registry.npmjs.org/tar-fs 646ms (cache miss)
+308 timing metavuln:packument:tar-fs Completed in 648ms
+309 timing metavuln:load:security-advisory:tar-fs:1109534 Completed in 3ms
+310 timing metavuln:load:security-advisory:tar-fs:1109542 Completed in 2ms
+311 timing metavuln:load:security-advisory:tar-fs:1109551 Completed in 5ms
+312 http fetch GET 200 https://registry.npmjs.org/kind-of/-/kind-of-3.2.2.tgz 903ms (cache miss)
+313 timing reifyNode:node_modules/kind-of Completed in 994ms
+314 http fetch GET 200 https://registry.npmjs.org/merge-deep/-/merge-deep-3.0.3.tgz 900ms (cache miss)
+315 timing reifyNode:node_modules/merge-deep Completed in 996ms
+316 http fetch GET 200 https://registry.npmjs.org/ip-address 674ms (cache miss)
+317 timing metavuln:packument:ip-address Completed in 682ms
+318 timing metavuln:load:security-advisory:ip-address:1118827 Completed in 3ms
+319 timing metavuln:load:security-advisory:ip-address:1130722 Completed in 6ms
+320 http fetch GET 200 https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.18.tgz 979ms (cache miss)
+321 timing reifyNode:node_modules/brace-expansion Completed in 1027ms
+322 http fetch GET 200 https://registry.npmjs.org/lazy-cache/-/lazy-cache-0.2.7.tgz 912ms (cache miss)
+323 timing reifyNode:node_modules/shallow-clone/node_modules/lazy-cache Completed in 1029ms
+324 http fetch GET 200 https://registry.npmjs.org/kind-of/-/kind-of-2.0.1.tgz 912ms (cache miss)
+325 timing reifyNode:node_modules/shallow-clone/node_modules/kind-of Completed in 1032ms
+326 http fetch GET 200 https://registry.npmjs.org/js-yaml 705ms (cache miss)
+327 timing metavuln:packument:js-yaml Completed in 709ms
+328 timing metavuln:load:security-advisory:js-yaml:1112715 Completed in 2ms
+329 timing metavuln:load:security-advisory:js-yaml:1121860 Completed in 2ms
+330 timing metavuln:load:security-advisory:js-yaml:1123911 Completed in 1ms
+331 timing metavuln:load:security-advisory:js-yaml:1138115 Completed in 1ms
+332 timing metavuln:load:security-advisory:js-yaml:1193727 Completed in 2ms
+333 http fetch GET 200 https://registry.npmjs.org/minimatch/-/minimatch-3.1.5.tgz 1011ms (cache miss)
+334 timing reifyNode:node_modules/minimatch Completed in 1062ms
+335 http fetch GET 200 https://registry.npmjs.org/deepmerge/-/deepmerge-4.3.1.tgz 957ms (cache miss)
+336 timing reifyNode:node_modules/deepmerge Completed in 1061ms
+337 http fetch GET 200 https://registry.npmjs.org/basic-ftp 744ms (cache miss)
+338 timing metavuln:packument:basic-ftp Completed in 749ms
+339 timing metavuln:load:security-advisory:basic-ftp:1118825 Completed in 10ms
+340 timing metavuln:load:security-advisory:basic-ftp:1113518 Completed in 2ms
+341 timing metavuln:load:security-advisory:basic-ftp:1116454 Completed in 2ms
+342 timing metavuln:load:security-advisory:basic-ftp:1117083 Completed in 2ms
+343 http fetch GET 200 https://registry.npmjs.org/glob/-/glob-7.2.3.tgz 1046ms (cache miss)
+344 warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+345 timing reifyNode:node_modules/glob Completed in 1111ms
+346 timing metavuln:cache:put:security-advisory:extract-zip:jSWTM56amLotlEyQMMBsw92Q/clAh5dhlOjtFhHsq98TlvN8hzenDvvOxc3tJgHR5Vqi7ZygoBhGke/CFd+aVg== Completed in 160ms
+347 timing metavuln:calculate:security-advisory:extract-zip:1139346 Completed in 787ms
+348 timing metavuln:cache:put:security-advisory:extract-zip:5PFZQI8MKk12bR/YK/ZVnUmDiH8J19S/dbxvcq6MnKcd40s7jQdQeJZjIR3e3QxohW1CAyHmvPolG6tuD2vnrA== Completed in 157ms
+349 timing metavuln:calculate:security-advisory:extract-zip:1193685 Completed in 786ms
+350 timing metavuln:cache:put:security-advisory:tar-fs:QYnG1CC8+NN+TqmWQx3aHBnBQ9p/MAbw4I0l+gnlj2PZN7hy3FLfaWP6JdJJmUCn32+BftZCVifrkSu2nK39jQ== Completed in 135ms
+351 timing metavuln:calculate:security-advisory:tar-fs:1109534 Completed in 786ms
+352 timing metavuln:cache:put:security-advisory:tar-fs:KfSIEBXTCgWMFKC8B6Ksr2lGcBoxYfqZYZdW7gD6YmYHmfY9yzqONXKd7VyQQePL5rvYDxjrjqU0VlRARhMrsg== Completed in 126ms
+353 timing metavuln:calculate:security-advisory:tar-fs:1109551 Completed in 784ms
+354 timing metavuln:cache:put:security-advisory:ip-address:JagRJ/jzi+hKfT9wwia4ZBLD59vjtPACLl+Z3zhrC+8zTljlC7S7d5t68wAVLZOwEIznyIrsv2WhfUc2gH+cEg== Completed in 107ms
+355 timing metavuln:calculate:security-advisory:ip-address:1118827 Completed in 792ms
+356 timing metavuln:cache:put:security-advisory:tar-fs:lfVnxIEXtxFrrw8msCJ2KKW94ZKO5ug5zCelMM/mLzVYoa2FDeP10DtXjm7MPf5RoPC0G7RMGL4Njf3Qm6oAoA== Completed in 134ms
+357 timing metavuln:calculate:security-advisory:tar-fs:1109542 Completed in 788ms
+358 timing metavuln:cache:put:security-advisory:ip-address:iZ6eqftXQ5U7oxxwm1FqwNnsmmgaiEiPNMWwV0yEYoA92hylUZDRGksj2tTX69LoRE19mpn7CYQC1Yylb7gTNg== Completed in 104ms
+359 timing metavuln:calculate:security-advisory:ip-address:1130722 Completed in 793ms
+360 timing metavuln:cache:put:security-advisory:js-yaml:4JRmIWaw7t9g2nj2coc/knMKSpUTTvf6gd7QGFDejryJnGjc+YeBUVzshR5afcQZnuPyYGRjBRxydkQEqdhtbQ== Completed in 76ms
+361 timing metavuln:calculate:security-advisory:js-yaml:1123911 Completed in 793ms
+362 timing metavuln:cache:put:security-advisory:js-yaml:hRHUgW0MJiPqjWt2sUfet2EYlqoE1gaxACC2WErx8y0hzruS4JIdQFSyu03fknqwUeEglYl2LNhb3CLbe1gk7A== Completed in 80ms
+363 timing metavuln:calculate:security-advisory:js-yaml:1121860 Completed in 793ms
+364 timing metavuln:cache:put:security-advisory:js-yaml:OUZIQ3PVVGrkuRqB+emtTIY6mY1ZYXKAjty3MEHcLQlklmPh5BstzoMFTWmQmZxuW4bTRahKM6+bAF3EDZo2xw== Completed in 75ms
+365 timing metavuln:calculate:security-advisory:js-yaml:1138115 Completed in 793ms
+366 timing metavuln:cache:put:security-advisory:js-yaml:rPKItsey5NAOkwlZ0jj/srGDfex3lM3kc0Jt/iKDQKxrLExmxBPfiHEGSGFS11EIIZ9oWm9Jw3K50YZA6kxidg== Completed in 72ms
+367 timing metavuln:calculate:security-advisory:js-yaml:1193727 Completed in 792ms
+368 http fetch GET 200 https://registry.npmjs.org/puppeteer-extra-plugin/-/puppeteer-extra-plugin-3.2.3.tgz 1024ms (cache miss)
+369 timing reifyNode:node_modules/puppeteer-extra-plugin Completed in 1126ms
+370 timing metavuln:cache:put:security-advisory:basic-ftp:1PRVnmGNL8rYZpgZAvyPH2nvFd6p8UYB63Bl4yML0P5I4/BEia9ZT0oQKzvYVTM8w+OmHxe2obrZLSbgAdJHxg== Completed in 45ms
+371 timing metavuln:calculate:security-advisory:basic-ftp:1118825 Completed in 805ms
+372 timing metavuln:cache:put:security-advisory:js-yaml:621IdjBdZEeVoUcjWGl1jXN0jFDGaf7dIQMeaPVKf5MxqYprJztiOC0OHOUPVoayh7Cq/fTC8L5CqEb98qlE7w== Completed in 86ms
+373 timing metavuln:calculate:security-advisory:js-yaml:1112715 Completed in 798ms
+374 timing metavuln:cache:put:security-advisory:basic-ftp:vIIozQq7xzP2tB9AvV8wE7lrwibHkDox71ej09+lcyQJ/Q7pT4wyEOGl32rTRMv780zdzBIb9giOVTU4j4acpA== Completed in 47ms
+375 timing metavuln:calculate:security-advisory:basic-ftp:1113518 Completed in 807ms
+376 timing metavuln:cache:put:security-advisory:basic-ftp:dwgcsujhz5E4o162n5FcYkiUltc7EZwPMDvZGSl61ZbkbeSuMouqA8yQAXEvxv4X8oFUZK0HCwnLBiAckkCl8Q== Completed in 43ms
+377 timing metavuln:calculate:security-advisory:basic-ftp:1117083 Completed in 806ms
+378 timing metavuln:cache:put:security-advisory:basic-ftp:Xm5K4BbE70IJjDMXQ98Fbd+dQn5JVUkzo9rBjpBNhXf1r9+QHKyPPPe7K80fDVwNYVs6dhe7KPuGl8CIHjFg6w== Completed in 45ms
+379 timing metavuln:calculate:security-advisory:basic-ftp:1116454 Completed in 807ms
+380 http fetch GET 200 https://registry.npmjs.org/puppeteer-extra/-/puppeteer-extra-3.3.6.tgz 1022ms (cache miss)
+381 timing reifyNode:node_modules/puppeteer-extra Completed in 1133ms
+382 http fetch GET 200 https://registry.npmjs.org/ws 810ms (cache miss)
+383 timing metavuln:packument:ws Completed in 814ms
+384 timing metavuln:load:security-advisory:ws:1118728 Completed in 8ms
+385 timing metavuln:load:security-advisory:ws:1119108 Completed in 9ms
+386 timing metavuln:load:security-advisory:ws:1123259 Completed in 7ms
+387 http fetch GET 200 https://registry.npmjs.org/fs-extra/-/fs-extra-10.1.0.tgz 1078ms (cache miss)
+388 timing reifyNode:node_modules/puppeteer-extra-plugin-user-data-dir/node_modules/fs-extra Completed in 1192ms
+389 timing metavuln:cache:put:security-advisory:ws:Gibcit29n/ogkeUBgZ01NX6U+jY3Zp1E0iGdto646j72OVuTsI1GTUWZzCtx3XwMU+kaOMlk+m0bDbRGj4Ruuw== Completed in 37ms
+390 timing metavuln:calculate:security-advisory:ws:1118728 Completed in 859ms
+391 timing metavuln:cache:put:security-advisory:ws:riCaqXeEj3LGJHsuDUezanD1igwJ1gD5B0Z0jDf8slGSkFNcUxH/yz4/VwuWsi+XAx/SPZKMWI5kAltGWYRGUg== Completed in 28ms
+392 timing metavuln:calculate:security-advisory:ws:1119108 Completed in 858ms
+393 timing metavuln:cache:put:security-advisory:ws:FCiq93wPa5YIRoC+osxDM6AqlUQalSrMxM3xxzdzdy9dCvEbzaPVIuWaJi1l/8fX8Bq49JKEKJAZocgF236GuA== Completed in 20ms
+394 timing metavuln:calculate:security-advisory:ws:1123259 Completed in 858ms
+395 timing metavuln:cache:get:security-advisory:get-uri:gV6dDxXN8aJi6iE17/ZLXAcSs7YaTVJynK0OQ/xCF4GVi55W8ADMu7VAxl5kpQG6dE8UoSH0NsfsA6+X5PGSwQ== Completed in 3ms
+396 http fetch GET 200 https://registry.npmjs.org/get-uri 70ms (cache miss)
+397 timing metavuln:packument:get-uri Completed in 72ms
+398 timing metavuln:load:security-advisory:get-uri:1PRVnmGNL8rYZpgZAvyPH2nvFd6p8UYB63Bl4yML0P5I4/BEia9ZT0oQKzvYVTM8w+OmHxe2obrZLSbgAdJHxg== Completed in 7ms
+399 http fetch GET 200 https://registry.npmjs.org/puppeteer-extra-plugin-stealth/-/puppeteer-extra-plugin-stealth-2.11.2.tgz 1172ms (cache miss)
+400 timing reifyNode:node_modules/puppeteer-extra-plugin-stealth Completed in 1282ms
+401 timing reify:unpack Completed in 1285ms
+402 timing reify:unretire Completed in 1ms
+403 timing metavuln:cache:put:security-advisory:get-uri:gV6dDxXN8aJi6iE17/ZLXAcSs7YaTVJynK0OQ/xCF4GVi55W8ADMu7VAxl5kpQG6dE8UoSH0NsfsA6+X5PGSwQ== Completed in 13ms
+404 timing metavuln:calculate:security-advisory:get-uri:1PRVnmGNL8rYZpgZAvyPH2nvFd6p8UYB63Bl4yML0P5I4/BEia9ZT0oQKzvYVTM8w+OmHxe2obrZLSbgAdJHxg== Completed in 93ms
+405 timing build:queue Completed in 6ms
+406 timing metavuln:cache:get:security-advisory:@puppeteer/browsers:dNQPCoOsSEByWIfcjTGAWZlLVMxLCcVmjdr+A5f9WYHMrxMe4/OEKH7/BF4Px6wv/yxxMTGkgJCmPKna3DHTqg== Completed in 5ms
+407 timing build:link:node_modules/rimraf Completed in 11ms
+408 timing build:link Completed in 11ms
+409 timing build:deps Completed in 18ms
+410 timing build Completed in 18ms
+411 timing reify:build Completed in 19ms
+412 timing reify:trash Completed in 0ms
+413 http fetch GET 200 https://registry.npmjs.org/@puppeteer%2fbrowsers 78ms (cache miss)
+414 timing metavuln:packument:@puppeteer/browsers Completed in 81ms
+415 timing metavuln:load:security-advisory:@puppeteer/browsers:jSWTM56amLotlEyQMMBsw92Q/clAh5dhlOjtFhHsq98TlvN8hzenDvvOxc3tJgHR5Vqi7ZygoBhGke/CFd+aVg== Completed in 4ms
+416 timing metavuln:cache:put:security-advisory:@puppeteer/browsers:dNQPCoOsSEByWIfcjTGAWZlLVMxLCcVmjdr+A5f9WYHMrxMe4/OEKH7/BF4Px6wv/yxxMTGkgJCmPKna3DHTqg== Completed in 3ms
+417 timing metavuln:calculate:security-advisory:@puppeteer/browsers:jSWTM56amLotlEyQMMBsw92Q/clAh5dhlOjtFhHsq98TlvN8hzenDvvOxc3tJgHR5Vqi7ZygoBhGke/CFd+aVg== Completed in 88ms
+418 timing metavuln:cache:get:security-advisory:socks:P58w5lgIiKQWFXUuIoVnI+Zdh3JZloD+AH1iqnW4QQYq5M4adqsx/pezF6SGQ5LAy3610gbA9jLWWgcovN1DLA== Completed in 3ms
+419 http fetch GET 200 https://registry.npmjs.org/socks 55ms (cache miss)
+420 timing metavuln:packument:socks Completed in 59ms
+421 timing metavuln:load:security-advisory:socks:JagRJ/jzi+hKfT9wwia4ZBLD59vjtPACLl+Z3zhrC+8zTljlC7S7d5t68wAVLZOwEIznyIrsv2WhfUc2gH+cEg== Completed in 4ms
+422 timing metavuln:cache:put:security-advisory:socks:P58w5lgIiKQWFXUuIoVnI+Zdh3JZloD+AH1iqnW4QQYq5M4adqsx/pezF6SGQ5LAy3610gbA9jLWWgcovN1DLA== Completed in 3ms
+423 timing metavuln:calculate:security-advisory:socks:JagRJ/jzi+hKfT9wwia4ZBLD59vjtPACLl+Z3zhrC+8zTljlC7S7d5t68wAVLZOwEIznyIrsv2WhfUc2gH+cEg== Completed in 67ms
+424 timing metavuln:cache:get:security-advisory:cosmiconfig:9tECRM2wymvypUJjywoLhKBxmvKFXqN2QTDVg2B4+6a/esGzYSDRLkNtxhg7/ZKH6dF0kD03ilqxpP5Mzp6F5w== Completed in 3ms
+425 http fetch GET 200 https://registry.npmjs.org/cosmiconfig 64ms (cache miss)
+426 timing metavuln:packument:cosmiconfig Completed in 68ms
+427 timing metavuln:load:security-advisory:cosmiconfig:621IdjBdZEeVoUcjWGl1jXN0jFDGaf7dIQMeaPVKf5MxqYprJztiOC0OHOUPVoayh7Cq/fTC8L5CqEb98qlE7w== Completed in 4ms
+428 timing metavuln:cache:put:security-advisory:cosmiconfig:9tECRM2wymvypUJjywoLhKBxmvKFXqN2QTDVg2B4+6a/esGzYSDRLkNtxhg7/ZKH6dF0kD03ilqxpP5Mzp6F5w== Completed in 3ms
+429 timing metavuln:calculate:security-advisory:cosmiconfig:621IdjBdZEeVoUcjWGl1jXN0jFDGaf7dIQMeaPVKf5MxqYprJztiOC0OHOUPVoayh7Cq/fTC8L5CqEb98qlE7w== Completed in 75ms
+430 timing metavuln:cache:get:security-advisory:@puppeteer/browsers:rNnYse+GiaEbBxoZEZIS6eKwbcXXDy/koXYouagomDT7Tm8wLxTAVinu0yUej4GWZp7TU+Xi/Q0GyzWLD6iIsA== Completed in 0ms
+431 timing metavuln:load:security-advisory:@puppeteer/browsers:QYnG1CC8+NN+TqmWQx3aHBnBQ9p/MAbw4I0l+gnlj2PZN7hy3FLfaWP6JdJJmUCn32+BftZCVifrkSu2nK39jQ== Completed in 15ms
+432 timing metavuln:cache:put:security-advisory:@puppeteer/browsers:rNnYse+GiaEbBxoZEZIS6eKwbcXXDy/koXYouagomDT7Tm8wLxTAVinu0yUej4GWZp7TU+Xi/Q0GyzWLD6iIsA== Completed in 15ms
+433 timing metavuln:calculate:security-advisory:@puppeteer/browsers:QYnG1CC8+NN+TqmWQx3aHBnBQ9p/MAbw4I0l+gnlj2PZN7hy3FLfaWP6JdJJmUCn32+BftZCVifrkSu2nK39jQ== Completed in 30ms
+434 timing metavuln:packument:puppeteer-core Completed in 0ms
+435 timing metavuln:cache:get:security-advisory:puppeteer-core:Eaz6oaMEQHYKwR/oUNCRGOo99necQCW2NxgNPj+xi3VcLN8l0dknW7b9CClHVms2UsWSgvlk2xgfHW/zyMAmAg== Completed in 1ms
+436 timing metavuln:load:security-advisory:puppeteer-core:Gibcit29n/ogkeUBgZ01NX6U+jY3Zp1E0iGdto646j72OVuTsI1GTUWZzCtx3XwMU+kaOMlk+m0bDbRGj4Ruuw== Completed in 78ms
+437 timing metavuln:cache:put:security-advisory:puppeteer-core:Eaz6oaMEQHYKwR/oUNCRGOo99necQCW2NxgNPj+xi3VcLN8l0dknW7b9CClHVms2UsWSgvlk2xgfHW/zyMAmAg== Completed in 3ms
+438 timing metavuln:calculate:security-advisory:puppeteer-core:Gibcit29n/ogkeUBgZ01NX6U+jY3Zp1E0iGdto646j72OVuTsI1GTUWZzCtx3XwMU+kaOMlk+m0bDbRGj4Ruuw== Completed in 82ms
+439 timing metavuln:packument:puppeteer Completed in 1ms
+440 timing metavuln:cache:get:security-advisory:puppeteer:ae0Oj38StPAfHMb3cuBukB6EqPZufezQWbq7R33GOq8nFp5qvGbWedgbQI7cHG/T+vU/qwFZtzS+xdq50ovLAg== Completed in 1ms
+441 timing metavuln:load:security-advisory:puppeteer:dNQPCoOsSEByWIfcjTGAWZlLVMxLCcVmjdr+A5f9WYHMrxMe4/OEKH7/BF4Px6wv/yxxMTGkgJCmPKna3DHTqg== Completed in 73ms
+442 timing metavuln:cache:get:security-advisory:puppeteer-core:g3MqsvnKagHJgHEVgR7yVrwnEeJN8jed/dyLwJOFwE04dtey4L3lA4zfHoDf27q+yE+pulc4C6l+JnFtvYmVgQ== Completed in 74ms
+443 timing metavuln:load:security-advisory:puppeteer-core:dNQPCoOsSEByWIfcjTGAWZlLVMxLCcVmjdr+A5f9WYHMrxMe4/OEKH7/BF4Px6wv/yxxMTGkgJCmPKna3DHTqg== Completed in 11ms
+444 timing metavuln:cache:put:security-advisory:puppeteer:ae0Oj38StPAfHMb3cuBukB6EqPZufezQWbq7R33GOq8nFp5qvGbWedgbQI7cHG/T+vU/qwFZtzS+xdq50ovLAg== Completed in 18ms
+445 timing metavuln:calculate:security-advisory:puppeteer:dNQPCoOsSEByWIfcjTGAWZlLVMxLCcVmjdr+A5f9WYHMrxMe4/OEKH7/BF4Px6wv/yxxMTGkgJCmPKna3DHTqg== Completed in 92ms
+446 timing metavuln:cache:put:security-advisory:puppeteer-core:g3MqsvnKagHJgHEVgR7yVrwnEeJN8jed/dyLwJOFwE04dtey4L3lA4zfHoDf27q+yE+pulc4C6l+JnFtvYmVgQ== Completed in 7ms
+447 timing metavuln:calculate:security-advisory:puppeteer-core:dNQPCoOsSEByWIfcjTGAWZlLVMxLCcVmjdr+A5f9WYHMrxMe4/OEKH7/BF4Px6wv/yxxMTGkgJCmPKna3DHTqg== Completed in 92ms
+448 timing metavuln:cache:get:security-advisory:socks-proxy-agent:Bm5Ee2/tKkD/H5j5PuJ4b9Y5lk/ky95iTGURcLCsRgcHcbY/cVP4+Ro0WlhfOwRDZwp5kLieveRc88UZha7Wog== Completed in 2ms
+449 http fetch GET 200 https://registry.npmjs.org/socks-proxy-agent 49ms (cache miss)
+450 timing metavuln:packument:socks-proxy-agent Completed in 52ms
+451 timing metavuln:load:security-advisory:socks-proxy-agent:P58w5lgIiKQWFXUuIoVnI+Zdh3JZloD+AH1iqnW4QQYq5M4adqsx/pezF6SGQ5LAy3610gbA9jLWWgcovN1DLA== Completed in 3ms
+452 timing metavuln:cache:put:security-advisory:socks-proxy-agent:Bm5Ee2/tKkD/H5j5PuJ4b9Y5lk/ky95iTGURcLCsRgcHcbY/cVP4+Ro0WlhfOwRDZwp5kLieveRc88UZha7Wog== Completed in 3ms
+453 timing metavuln:calculate:security-advisory:socks-proxy-agent:P58w5lgIiKQWFXUuIoVnI+Zdh3JZloD+AH1iqnW4QQYq5M4adqsx/pezF6SGQ5LAy3610gbA9jLWWgcovN1DLA== Completed in 58ms
+454 timing metavuln:packument:puppeteer-extra Completed in 0ms
+455 timing metavuln:cache:get:security-advisory:puppeteer:MBumWqF91xtNi5RN+Emd4UR6agKjHO5q27cYmMj/42WI6gKnl9lqHkJz6QYkkIwtyFr1UT6jQpFrlKQ6l6GPVQ== Completed in 1ms
+456 timing metavuln:load:security-advisory:puppeteer:Eaz6oaMEQHYKwR/oUNCRGOo99necQCW2NxgNPj+xi3VcLN8l0dknW7b9CClHVms2UsWSgvlk2xgfHW/zyMAmAg== Completed in 248ms
+457 timing metavuln:cache:get:security-advisory:puppeteer-extra:7lXgLBKWghEgs4zpKVjqfQxExB2Xr3xSh24Oixz9P0ZBZgzCe1sDOQrSbPyObCoNkMWlBUlv8DlUWChaDIvYwg== Completed in 251ms
+458 timing metavuln:load:security-advisory:puppeteer-extra:Eaz6oaMEQHYKwR/oUNCRGOo99necQCW2NxgNPj+xi3VcLN8l0dknW7b9CClHVms2UsWSgvlk2xgfHW/zyMAmAg== Completed in 1ms
+459 timing metavuln:cache:put:security-advisory:puppeteer:MBumWqF91xtNi5RN+Emd4UR6agKjHO5q27cYmMj/42WI6gKnl9lqHkJz6QYkkIwtyFr1UT6jQpFrlKQ6l6GPVQ== Completed in 22ms
+460 timing metavuln:calculate:security-advisory:puppeteer:Eaz6oaMEQHYKwR/oUNCRGOo99necQCW2NxgNPj+xi3VcLN8l0dknW7b9CClHVms2UsWSgvlk2xgfHW/zyMAmAg== Completed in 271ms
+461 timing metavuln:cache:put:security-advisory:puppeteer-extra:7lXgLBKWghEgs4zpKVjqfQxExB2Xr3xSh24Oixz9P0ZBZgzCe1sDOQrSbPyObCoNkMWlBUlv8DlUWChaDIvYwg== Completed in 20ms
+462 timing metavuln:calculate:security-advisory:puppeteer-extra:Eaz6oaMEQHYKwR/oUNCRGOo99necQCW2NxgNPj+xi3VcLN8l0dknW7b9CClHVms2UsWSgvlk2xgfHW/zyMAmAg== Completed in 272ms
+463 timing metavuln:cache:get:security-advisory:puppeteer-extra:Sr/IDylvzRVGbDpWDncpDPR5EHS6JDFW352m2oljlqy2JbE4k8121g2lESn3n1yxcaNrpL5zi017a6wJ4z+K9A== Completed in 2ms
+464 timing metavuln:load:security-advisory:puppeteer-extra:ae0Oj38StPAfHMb3cuBukB6EqPZufezQWbq7R33GOq8nFp5qvGbWedgbQI7cHG/T+vU/qwFZtzS+xdq50ovLAg== Completed in 17ms
+465 timing metavuln:cache:put:security-advisory:puppeteer-extra:Sr/IDylvzRVGbDpWDncpDPR5EHS6JDFW352m2oljlqy2JbE4k8121g2lESn3n1yxcaNrpL5zi017a6wJ4z+K9A== Completed in 30ms
+466 timing metavuln:calculate:security-advisory:puppeteer-extra:ae0Oj38StPAfHMb3cuBukB6EqPZufezQWbq7R33GOq8nFp5qvGbWedgbQI7cHG/T+vU/qwFZtzS+xdq50ovLAg== Completed in 49ms
+467 timing auditReport:init Completed in 1827ms
+468 timing reify:audit Completed in 2163ms
+469 timing reify Completed in 5177ms
+470 timing command:install Completed in 5230ms
+471 verbose exit 0
+472 timing npm Completed in 5701ms
+473 info ok
